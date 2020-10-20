@@ -1,17 +1,17 @@
 import axios from 'axios';
 const API_URL = 'http://localhost:8000';
 
-export default class ClientesService {
+export default class CalendarService {
 
     constructor() { }
 
 
-    getClientes() {
-        const url = `${API_URL}/api/clientes/`;
+    getEventos() {
+        const url = `${API_URL}/api/eventos/`;
         return axios.get(url).then(response => response.data);
     }
-    getClientes2() {
-        const url = `${API_URL}/api/clientes`;
+    getEventos2() {
+        const url = `${API_URL}/api/eventos`;
         return axios.get(url).then(response => response.data);
     }
     getClientesByURL(link) {

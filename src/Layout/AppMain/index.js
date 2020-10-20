@@ -14,6 +14,7 @@ const Charts = lazy(() => import('../../DemoPages/Charts'));
 const Forms = lazy(() => import('../../DemoPages/Forms'));
 const Tables = lazy(() => import('../../DemoPages/Tables'));
 const Clientes = lazy(() => import('../../DemoPages/Clientes'));
+const Calendario = lazy(() => import('../../DemoPages/Calendario'));
 
 const AppMain = () => {
 
@@ -26,13 +27,26 @@ const AppMain = () => {
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-5">
-                            Por favor, espera mientras cargamos los clientes
+                            Por favor, espera mientras cargamos.
                             <small>Because this is a demonstration we load at once all the Clientes examples. This wouldn't happen in a real live app!</small>
                         </h6>
                     </div>
                 </div>
             }>
                 <Route path="/clientes" component={Clientes} />
+            </Suspense>
+              {/* Calendario */}
+            <Suspense fallback={
+                <div className="loader-container">
+                    <div className="loader-container-inner">
+                        <h6 className="mt-5">
+                            Por favor, espera mientras cargamos el calendario
+                            <small>Because this is a demonstration we load at once all the Clientes examples. This wouldn't happen in a real live app!</small>
+                        </h6>
+                    </div>
+                </div>
+            }>
+                <Route path="/calendario" component={Calendario} />
             </Suspense>
 
             {/* Components */}

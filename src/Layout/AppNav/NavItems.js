@@ -12,7 +12,7 @@ export const MainNav = [
     {
         icon: 'pe-7s-rocket',
         label: 'Calendario',
-        to: '#/calendario',
+        to: '#/calendario/lista',
     },
 ];
 export const ComponentsNav = [

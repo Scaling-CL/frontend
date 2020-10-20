@@ -3,16 +3,16 @@ import {Route} from 'react-router-dom';
 
 // Dashboard Widgets
 
-import clientesList from "./Lista/";
-import clientesCreateUpdate from "./Crear/";
-import clientesUpdate from "./Editar/";
+import calendar from "./Lista/";
+//import clientesCreateUpdate from "./Crear/";
+//import clientesUpdate from "./Editar/";
 
 // Layout
 import AppHeader from '../../Layout/AppHeader/';
 import AppSidebar from '../../Layout/AppSidebar/';
 import AppFooter from '../../Layout/AppFooter/';
 
-const Clientes = ({ match }) => (
+const Calendario = ({ match }) => (
     <Fragment>
         <AppHeader />
         <div className="app-main">
@@ -20,17 +20,10 @@ const Clientes = ({ match }) => (
             <div className="app-main__outer">
                 <div className="app-main__inner">
 
-                    {/* Mostrar clientes */}
+                    {/* Mostrar calendario */}
 
-                    <Route path={`${match.url}/lista`} component={clientesList} />
+                    <Route path={`${match.url}/lista`} component={calendar} />
 
-                    {/* Crear cliente */}
-
-                    <Route path={`${match.url}/crear`} component={clientesCreateUpdate} />
-
-                    {/* Editar cliente */}
-
-                    <Route path={`${match.url}/editar/:id`} component={clientesUpdate} />
                 </div>
                 <AppFooter />
             </div>
@@ -39,4 +32,4 @@ const Clientes = ({ match }) => (
     </Fragment>
 );
 
-export default Clientes;
+export default Calendario;
