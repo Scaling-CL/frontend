@@ -10,6 +10,10 @@ export default class ClientesService {
         const url = `${API_URL}/api/clientes/`;
         return axios.get(url).then(response => response.data);
     }
+    getClientes2() {
+        const url = `${API_URL}/api/clientes`;
+        return axios.get(url).then(response => response.data);
+    }
     getClientesByURL(link) {
         const url = `${API_URL}${link}`;
         return axios.get(url).then(response => response.data);
