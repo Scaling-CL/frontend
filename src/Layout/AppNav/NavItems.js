@@ -9,6 +9,11 @@ export const MainNav = [
         label: 'Clientes',
         to: '#/clientes/lista',
     },
+    {
+        icon: 'pe-7s-rocket',
+        label: 'Calendario',
+        to: '#/calendario',
+    },
 ];
 export const ComponentsNav = [
     {

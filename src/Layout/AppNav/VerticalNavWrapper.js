@@ -12,13 +12,13 @@ class Nav extends Component {
     render() {
         return (
             <Fragment>
-                <h5 className="app-sidebar__heading">PRO VERSION</h5>
+                <h5 className="app-sidebar__heading">Principal</h5>
                 <div className="metismenu vertical-nav-menu">
                     <ul className="metismenu-container">
                         <li className="metismenu-item">
-                            <a className="metismenu-link" href="https://dashboardpack.com/theme-details/architectui-dashboard-react-pro" target="_blank">
+                            <a className="metismenu-link" href="#" target="_blank">
                                 <i className="metismenu-icon pe-7s-diamond"></i>
-                                Upgrade to PRO
+                                Ejemplo
                             </a>
                         </li>
                     </ul>
