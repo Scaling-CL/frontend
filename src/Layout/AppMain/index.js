@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import React, {Suspense, lazy, Fragment} from 'react';
+import Login from "../../containers/Login";
 
 import {
     ToastContainer,
@@ -155,7 +156,7 @@ const AppMain = () => {
             </Suspense>
 
             <Route exact path="/" render={() => (
-                <Redirect to="/dashboards/basic"/>
+                <Login />
             )}/>
             <ToastContainer/>
         </Fragment>
