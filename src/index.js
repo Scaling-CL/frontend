@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import registerServiceWorker from './registerServiceWorker';
 import { unregister } from './registerServiceWorker';
-
+import "./styles.css";
 import { HashRouter } from 'react-router-dom';
 import './assets/base.css';
 import Main from './DemoPages/Main';
@@ -34,4 +34,3 @@ if (module.hot) {
 unregister();
 
 // registerServiceWorker();
-
